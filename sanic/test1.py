@@ -13,7 +13,7 @@ app = Sanic('test1')
 @app.route('/')
 async def main_page(request):
     # return text('hello')
-    print('test')
+    print('----------:' + request.ip)
     return json({'id': '001', 'name': [[1, 2],
                                        3, 4]})
 
